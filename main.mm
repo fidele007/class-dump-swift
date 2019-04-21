@@ -279,7 +279,7 @@ void createSwiftHeaderFiles(std::vector<SDClass*> classes, std::string outputDir
 			mkdir(outputDir.c_str(), 0777);
 
 			
-			std::string filename = "./" + outputDir + "/" + cls->name + ".swifth";
+			std::string filename = outputDir + "/" + cls->name + ".swifth";
 			file.open(filename);
 			// Write to file
 			createSwiftHeader(&file, cls);
